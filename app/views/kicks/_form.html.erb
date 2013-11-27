@@ -1,3 +1,6 @@
+<% =begin %>
+I like your use of partials - this and _sidebar.html.erb in particular. Your views leverage partials and stay DRY. Great work!
+<% end %>
 <div class="new_kick">
     <%= form_for(@kick) do |f| %>
         <% if @kick.errors.any? %>
@@ -64,6 +67,9 @@
 </div>
 
 
+<% =begin %>
+Hey! You know where this belongs! app/assets/javascripts/
+<% =end %>
 <script type="text/javascript">
     function pick(data){
         console.log(data);

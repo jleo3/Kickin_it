@@ -19,6 +19,7 @@ class User < ActiveRecord::Base
                     :storage => :s3, :s3_credentials => "#{::Rails.root}/config/s3.yml"
 
 
+  # Nicely done here. Simple, declarative methods.
   def user_id
     current_user.id
   end

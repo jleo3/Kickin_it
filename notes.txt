@@ -1,0 +1,6 @@
+- This is one of the best apps in the class! You've done so much outside the scope of the class to get your app up to the level it is now. I love the way Kickin It looks and feels, and it's really easy to navigate. All of that is on you - I know I didn't teach it! 
+
+- Using paperclip and AWS makes the application super-responsive, which I love. You did a great job with this.
+
+- I gave plenty of comments on your JS and view files. Your views are well done and well-factored and you make great use of the asset pipeline. So when I give you advice on JS, just bear in mind it's because I know you're ready for the next level!
+

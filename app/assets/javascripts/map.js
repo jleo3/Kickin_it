@@ -6,6 +6,13 @@
  * To change this template use File | Settings | File Templates.
  */
 
+/**
+ * Like I said in notes.txt, this is ALL you! I know you have frontend experience, and it's great to let it shine through here. 
+ *
+ * One thing that strikes me is that your JS files and most of their functions are a bit long and complex. You might have difficulty changing things. You have lots of comments to remind you what the code does.
+ * Have you looked at Jasmine (https://github.com/pivotal/jasmine)? Or JS lint (http://www.jslint.com/)? Both are tools that could help you keep your JS complexity down.
+ */
+ 
 load("home#index", function (controller, action) {
     var config = {
         clientId: 'BCH20MFU1KWJNGTFVQHYSOQGDA42BZ5KYWGIQJW40HT4PAOT',

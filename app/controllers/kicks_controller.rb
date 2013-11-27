@@ -1,4 +1,7 @@
 class KicksController < ApplicationController
+  # Currently, this method returns this error when I navigate here: 
+  # "There was an error saving your kick. Sorry!" If you don't want your 
+  # users to access it, you should take it out.
   def index
   end
 
@@ -16,6 +19,9 @@ class KicksController < ApplicationController
   end
 
   def create
+    # You can leverage your ActiveRecord associations to do some of this heavy 
+    # lifting. @kick.user = @user should be all you need. Then if you want the 
+    # @kick's username, it's just @kick.user.name
     @user = current_user
     kick_params = params.require(:kick).permit(:title, :description, :time, :location, :user_id,
                                                :latitude, :longitude,
@@ -59,7 +65,8 @@ class KicksController < ApplicationController
     end
   end
 
-
+  # In a RESTful world, this would live at kickin-it.com/users/#{user.id}/kicks
+  # In other words, this logic would live in the #index method
   def mykicks
     @user = User.find_by_id(current_user.id)
     @kicks = @user.kicks

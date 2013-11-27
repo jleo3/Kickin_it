@@ -13,6 +13,8 @@ class UserController < ApplicationController
     @user = User.find_by_permalink(params[:id])
   end
 
+  # TODOs are a code smell: http://c2.com/cgi/wiki?CodeSmell. File issues in 
+  # your GitHub repo instead.
   ##TODO -- refactor from profile controller
 
   def update

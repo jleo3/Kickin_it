@@ -6,6 +6,9 @@
     <div class="kicks-all">
         <button id="single-all" class="btn btn-info btn-block" data-text-single="Single view?" data-text-all="View All">Single view?</button>
 
+        <% =begin %>
+        This looks like a LOT of work. Great work getting all of this together and functional.
+        <% =end %>
         <% @kicks.each do |kick| %>
 
             <div class="kick-contr kick-list-<%= kick.id %>" id="<%= kick.id %>" >
